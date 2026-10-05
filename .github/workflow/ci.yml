@@ -1,6 +1,6 @@
 on:
 push:
-branches:[master]
+branches:[main]
 
 jobs:
 check-file:
@@ -14,4 +14,4 @@ user:actions/ceckout@v4
 
 file 
 shell:cmd
-run:if exists stu.txt else (exit/b1)
+run:if exists studentdata.txt(echo file exists) else (exit/b1)
