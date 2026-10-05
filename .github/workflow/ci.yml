@@ -1,0 +1,17 @@
+on:
+push:
+branches:[master]
+
+jobs:
+check-file:
+runs-on:window-latest
+
+steps:
+-names:checkout repository
+user:actions/ceckout@v4
+
+-name:check student data
+
+file 
+shell:cmd
+run:if exists stu.txt else (exit/b1)
